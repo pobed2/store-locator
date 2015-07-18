@@ -7,12 +7,15 @@ module.exports = function(app) {
 	// Stores Routes
 	app.route('/stores')
 		.get(stores.list)
-		.post(users.requiresLogin, stores.create);
+		// .post(users.requiresLogin, stores.create);
+		.post(stores.create);
 
 	app.route('/stores/:storeId')
 		.get(stores.read)
-		.put(users.requiresLogin, stores.hasAuthorization, stores.update)
-		.delete(users.requiresLogin, stores.hasAuthorization, stores.delete);
+		// .put(users.requiresLogin, stores.hasAuthorization, stores.update)
+		// .delete(users.requiresLogin, stores.hasAuthorization, stores.delete);
+		.put(stores.update)
+		.delete(stores.delete);
 
 	// Finish by binding the Store middleware
 	app.param('storeId', stores.storeByID);

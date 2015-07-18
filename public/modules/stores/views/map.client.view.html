@@ -1,0 +1,34 @@
+<section data-ng-controller="MapController">
+	<ui-gmap-google-map center='map.center' zoom='map.zoom'>
+		<ui-gmap-layer namespace="visualization" type="HeatmapLayer" options="map.heatLayer.options" show="map.showHeat" onCreated="map.heatLayer.onCreation"></ui-gmap-layer>
+		<ui-gmap-markers
+				models='stores'
+				idkey="'name'"
+				coords="'self'"
+				>
+				<ui-gmap-windows show="show">
+						<div ng-non-bindable>{{name}}
+							<div>Total Visitors: {{total_visitors}}</div>
+							<div>City: {{city}}</div>
+							<div>Coutry: {{country}}</div>
+							<div>RSS Range: {{rss_range}}</div>
+							<div>TZ: {{tz}}</div>
+							<div>TZ Index: {{tz_index}}</div>
+							<div>Duration Threshold: {{duration_threshold}}</div>
+							<div>Start of Day: {{start_of_day}}</div>
+							<div>Is Updating: {{is_updating}}</div>
+							<div>RSS Campaign: {{rss_campaign}}</div>
+							<div>Session Timeout: {{session_timeout}}</div>
+							<div>Raw Data: {{raw_data}}</div>
+							<div>Campaign Duration: {{campaign_duration}}</div>
+							<div>RSS Walkby: {{rss_walkby}}</div>
+							<div>Visit Duration: {{visit_duration_keep_fraction}}</div>
+						</div>
+
+
+
+				</ui-gmap-windows>
+		</ui-gmap-markers>
+	</ui-gmap-google-map>
+
+</section>

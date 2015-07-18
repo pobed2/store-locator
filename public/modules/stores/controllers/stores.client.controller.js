@@ -25,7 +25,7 @@ angular.module('stores').controller('StoresController', ['$scope', '$stateParams
 
 		// Remove existing Store
 		$scope.remove = function(store) {
-			if ( store ) { 
+			if ( store ) {
 				store.$remove();
 
 				for (var i in $scope.stores) {
@@ -58,7 +58,7 @@ angular.module('stores').controller('StoresController', ['$scope', '$stateParams
 
 		// Find existing Store
 		$scope.findOne = function() {
-			$scope.store = Stores.get({ 
+			$scope.store = Stores.get({
 				storeId: $stateParams.storeId
 			});
 		};

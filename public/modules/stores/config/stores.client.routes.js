@@ -5,6 +5,10 @@ angular.module('stores').config(['$stateProvider',
 	function($stateProvider) {
 		// Stores state routing
 		$stateProvider.
+		state('map', {
+			url: '/map',
+			templateUrl: 'modules/stores/views/map.client.view.html'
+		}).
 		state('listStores', {
 			url: '/stores',
 			templateUrl: 'modules/stores/views/list-stores.client.view.html'
