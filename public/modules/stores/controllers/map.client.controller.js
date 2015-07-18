@@ -31,7 +31,7 @@ angular.module('stores.map', ['uiGmapgoogle-maps'])
               console.log(heatLayer);
           },
           options: {
-            radius: 100
+            radius: 50
           }
         }
       };
