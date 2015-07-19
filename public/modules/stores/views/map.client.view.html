@@ -7,26 +7,24 @@
 				coords="'self'"
 				>
 				<ui-gmap-windows show="show">
-						<div ng-non-bindable>{{name}}
-							<div>Total Visitors: {{total_visitors}}</div>
-							<div>City: {{city}}</div>
-							<div>Coutry: {{country}}</div>
-							<div>RSS Range: {{rss_range}}</div>
-							<div>TZ: {{tz}}</div>
-							<div>TZ Index: {{tz_index}}</div>
-							<div>Duration Threshold: {{duration_threshold}}</div>
-							<div>Start of Day: {{start_of_day}}</div>
-							<div>Is Updating: {{is_updating}}</div>
-							<div>RSS Campaign: {{rss_campaign}}</div>
-							<div>Session Timeout: {{session_timeout}}</div>
-							<div>Raw Data: {{raw_data}}</div>
-							<div>Campaign Duration: {{campaign_duration}}</div>
-							<div>RSS Walkby: {{rss_walkby}}</div>
-							<div>Visit Duration: {{visit_duration_keep_fraction}}</div>
+						<div ng-non-bindable class="marker-window">
+							<h3>{{name}}</h3>
+							<div><span class="marker-window-subtitle">Total Visitors:</span> {{total_visitors}}</div>
+							<div><span class="marker-window-subtitle">City:</span>  {{city}}</div>
+							<div><span class="marker-window-subtitle">Coutry:</span>  {{country}}</div>
+							<div><span class="marker-window-subtitle">RSS Range:</span>  {{rss_range}}</div>
+							<div><span class="marker-window-subtitle">TZ:</span>  {{tz}}</div>
+							<div><span class="marker-window-subtitle">TZ Index:</span>  {{tz_index}}</div>
+							<div><span class="marker-window-subtitle">Duration Threshold:</span>  {{duration_threshold}}</div>
+							<div><span class="marker-window-subtitle">Start of Day:</span>  {{start_of_day}}</div>
+							<div><span class="marker-window-subtitle">Is Updating:</span>  {{is_updating}}</div>
+							<div><span class="marker-window-subtitle">RSS Campaign:</span>  {{rss_campaign}}</div>
+							<div><span class="marker-window-subtitle">ession Timeout:</span>  {{session_timeout}}</div>
+							<div><span class="marker-window-subtitle">Raw Data:</span>  {{raw_data}}</div>
+							<div><span class="marker-window-subtitle">Campaign Duration:</span>  {{campaign_duration}}</div>
+							<div><span class="marker-window-subtitle">RSS Walkby:</span>  {{rss_walkby}}</div>
+							<div><span class="marker-window-subtitle">Visit Duration:</span>  {{visit_duration_keep_fraction}}</div>
 						</div>
-
-
-
 				</ui-gmap-windows>
 		</ui-gmap-markers>
 	</ui-gmap-google-map>

@@ -16,3 +16,5 @@ public/dist/application.min.css
 public/dist/application.min.js
 
 Turnstyle.pem
+
+put_data.py

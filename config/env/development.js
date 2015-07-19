@@ -6,8 +6,8 @@ module.exports = {
 		title: 'Store Locator - Development Environment'
 	},
 	facebook: {
-		clientID: process.env.FACEBOOK_ID || 'APP_ID',
-		clientSecret: process.env.FACEBOOK_SECRET || 'APP_SECRET',
+		clientID: process.env.FACEBOOK_ID || '886230308140649',
+		clientSecret: process.env.FACEBOOK_SECRET || '031cb5b8387d8081beb6eb11f3e0cfea',
 		callbackURL: '/auth/facebook/callback'
 	},
 	twitter: {
@@ -16,8 +16,8 @@ module.exports = {
 		callbackURL: '/auth/twitter/callback'
 	},
 	google: {
-		clientID: process.env.GOOGLE_ID || 'APP_ID',
-		clientSecret: process.env.GOOGLE_SECRET || 'APP_SECRET',
+		clientID: process.env.GOOGLE_ID || '209128206410-67ugfpgqn9r2msuii0iagalej0pr2iup.apps.googleusercontent.com',
+		clientSecret: process.env.GOOGLE_SECRET || 'baOUsxkfEImES6Ogv_8ZAjwv',
 		callbackURL: '/auth/google/callback'
 	},
 	linkedin: {
@@ -26,8 +26,8 @@ module.exports = {
 		callbackURL: '/auth/linkedin/callback'
 	},
 	github: {
-		clientID: process.env.GITHUB_ID || 'APP_ID',
-		clientSecret: process.env.GITHUB_SECRET || 'APP_SECRET',
+		clientID: process.env.GITHUB_ID || 'd71f3fc189a87517474c',
+		clientSecret: process.env.GITHUB_SECRET || 'df81f7e63c2fba82892291857d41897b74f9223e',
 		callbackURL: '/auth/github/callback'
 	},
 	mailer: {

@@ -16,3 +16,10 @@
 .angular-google-map-container {
 	height: 600px;
 }
+.marker-window{
+	height: 50px;
+	overflow: scroll;
+}
+.marker-window-subtitle{
+	font-weight: bold;
+}
