@@ -9,12 +9,6 @@ app/tests/coverage/
 .idea/
 get-pip.py
 
-public/dist/application.js
-
-public/dist/application.min.css
-
-public/dist/application.min.js
-
 Turnstyle.pem
 
 put_data.py
