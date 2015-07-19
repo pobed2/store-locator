@@ -2,7 +2,25 @@
 	<div class="page-header">
 		<h1 data-ng-bind="store.name"></h1>
 	</div>
-	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == store.user._id))">
+	<div><em>Total Visitors:</em> {{store.total_visitors}}</div>
+	<div><em>Latitude:</em> {{store.latitude}}</div>
+	<div><em>Longitude:</em> {{store.longitude}}</div>
+	<div><em>City:</em> {{store.city}}</div>
+	<div><em>Country:</em> {{store.country}}</div>
+	<div><em>RSS Range:</em> {{store.rss_range}}</div>
+	<div><em>TZ:</em> {{store.tz}}</div>
+	<div><em>TZ Index:</em> {{store.tz_index}}</div>
+	<div><em>Duration Treshold:</em> {{store.duration_threshold}}</div>
+	<div><em>Start of Day:</em> {{store.start_of_day}}</div>
+	<div><em>Is Updating:</em> {{store.is_updating == 0 ? "false" : "true"}}</div>
+	<div><em>RSS Campaign:</em> {{store.rss_campaign}}</div>
+	<div><em>Session Timeout:</em> {{store.session_timeout}}</div>
+	<div><em>Raw Data:</em> {{store.raw_data}}</div>
+	<div><em>Campaign Duration:</em> {{store.campaign_duration}}</div>
+	<div><em>RSS Walkby:</em> {{store.rss_walkby}}</div>
+	<div><em>Visit Duration:</em> {{store.visit_duration_keep_fraction}}</div>
+
+	<div class="pull-right" data-ng-show="((authentication.user))">
 		<a class="btn btn-primary" href="/#!/stores/{{store._id}}/edit">
 			<i class="glyphicon glyphicon-edit"></i>
 		</a>
@@ -14,8 +32,6 @@
 		<em class="text-muted">
 			Posted on
 			<span data-ng-bind="store.created | date:'mediumDate'"></span>
-			by
-			<span data-ng-bind="store.user.displayName"></span>
 		</em>
 	</small>
 </section>

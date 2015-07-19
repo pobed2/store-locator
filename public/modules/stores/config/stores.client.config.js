@@ -7,5 +7,6 @@ angular.module('stores').run(['Menus',
 		Menus.addMenuItem('topbar', 'Stores', 'stores', 'dropdown', '/stores(/create)?');
 		Menus.addSubMenuItem('topbar', 'stores', 'List Stores', 'stores');
 		Menus.addSubMenuItem('topbar', 'stores', 'New Store', 'stores/create');
+		Menus.addSubMenuItem('topbar', 'stores', 'Map', 'map');
 	}
 ]);
